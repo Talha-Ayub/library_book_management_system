@@ -34,7 +34,7 @@ def update_books(book_id:UUID , book:Book):
             return Books[counter-1]
     raise HTTPException(
         status_code=404,
-        detail=f"ID{book_id}: Does not exist"
+        detail=f"ID{book_id}: Does not exist in the management system"
     )
 
 def delete_books(book_id=UUID,book=Book):
